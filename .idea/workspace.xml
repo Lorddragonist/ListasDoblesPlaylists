@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d031812-785d-486c-b178-21bdc2d5d2e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LsitasDoblementeEnlazadas.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cancion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListaDoble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListasDeReproducción.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MenuInicial.java" afterDir="false" />
+    <list default="true" id="8d031812-785d-486c-b178-21bdc2d5d2e6" name="Changes" comment="2023-08-23 Menu inicial creado, Lista de Listas creado, cancion creado">
+      <change afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cancion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListaDoble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListasDeReproducción.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuInicial.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,18 @@
       <option name="presentableId" value="Default" />
       <updated>1692841060635</updated>
     </task>
+    <task id="LOCAL-00001" summary="2023-08-23 Menu inicial creado, Lista de Listas creado, cancion creado">
+      <created>1692843132373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692843132373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2023-08-23 Menu inicial creado, Lista de Listas creado, cancion creado" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-08-23 Menu inicial creado, Lista de Listas creado, cancion creado" />
   </component>
 </project>
