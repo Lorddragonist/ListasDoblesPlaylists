@@ -1,47 +1,46 @@
-import java.util.Scanner;
+class Song {
+    private final String name;
+    private final String artist;
+    private Song nextTrack;
+    private Song previousTrack;
+    private int position;
 
-public class Song {
-    private String name;
-    private String status;
-
-    private String menu = "Options";
-    private String[] menuOptions = {
-            "1. Play",
-            "2. Stop",
-            "3. Add to PlayList",
-            "4. Back to main menu"
-    };
-
-    public Song(String name) {
-        this.name = name;
-        Scanner option = new Scanner(System.in);
-        int opt;
-        do {
-            System.out.println(this.menu);
-
-            for (int i = 0; i < menuOptions.length; i++) {
-                System.out.println(menuOptions[i]);
-            }
-
-            opt = option.nextInt();
-            System.out.println(menuOptions[opt - 1]);
-            switch (opt) {
-                case 1:
-                    this.setStatus("Playing");
-                    break;
-                case 2:
-                    this.setStatus("Stopped");
-                    break;
-                case 3:
-                    break;
-                default:
-                    break;
-            }
-        } while (opt != 4);
+    public Song(String title, String artist) {
+        this.name = title;
+        this.artist = artist;
+        this.nextTrack = null;
+        this.previousTrack = null;
+        this.position = 0;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-        System.out.println(status + " " + this.name);
+    public String getName() {
+        return name;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+    public Song getNextTrack() {
+        return nextTrack;
+    }
+
+    public void setNextTrack(Song nextTrack) {
+        this.nextTrack = nextTrack;
+    }
+
+    public Song getPreviousTrack() {
+        return previousTrack;
+    }
+
+    public void setPreviousTrack(Song previousTrack) {
+        this.previousTrack = previousTrack;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
     }
 }
