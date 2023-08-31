@@ -1,7 +1,6 @@
 public class Playlist {
     private Song first;
     private Song last;
-
     private int len;
 
     public Playlist() {
@@ -11,8 +10,8 @@ public class Playlist {
     }
 
     // Method to add a new song to the playlist
-    public void addSong(String name, String artist) {
-        Song newSong = new Song(name, artist);
+    public void addSong(String name, String artist, String album) {
+        Song newSong = new Song(name, artist, album);
         if (first == null) {
             first = newSong;
             last = newSong;
@@ -98,6 +97,7 @@ public class Playlist {
             if (current.getPosition() == position) {
                 System.out.println("We have found this Title: " + current.getName() +
                         ", artist: " + current.getArtist() +
+                        ", album: " + current.getAlbum() +
                         ", position: " + current.getPosition());
                 return; // The song was deleted
             }
@@ -113,6 +113,7 @@ public class Playlist {
         while (current != null) {
             System.out.println("Title: " + current.getName() +
                     ", artist: " + current.getArtist() +
+                    ", album: " + current.getAlbum() +
                     ", position: " + current.getPosition());
             current = current.getNextTrack();
         }

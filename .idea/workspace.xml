@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d031812-785d-486c-b178-21bdc2d5d2e6" name="Changes" comment="2023-08-23 Reestructuración del programa, generando software de musica">
+    <list default="true" id="8d031812-785d-486c-b178-21bdc2d5d2e6" name="Changes" comment="2023-08-29 Restructure the program to make it more simple and understandable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
@@ -67,12 +67,31 @@
       <option name="project" value="LOCAL" />
       <updated>1692850928828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2023-08-29 Restructure the program to make it more simple and understandable">
+      <created>1693364391828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1693364391828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023-08-23 Menu inicial creado, Lista de Listas creado, cancion creado" />
     <MESSAGE value="2023-08-23 Reestructuración del programa, generando software de musica" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023-08-23 Reestructuración del programa, generando software de musica" />
+    <MESSAGE value="2023-08-29 Restructure the program to make it more simple and understandable" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023-08-29 Restructure the program to make it more simple and understandable" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

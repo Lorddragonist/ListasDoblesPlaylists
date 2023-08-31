@@ -1,13 +1,15 @@
-class Song {
+public class Song {
     private final String name;
     private final String artist;
+    private final String album;
     private Song nextTrack;
     private Song previousTrack;
     private int position;
 
-    public Song(String title, String artist) {
+    public Song(String title, String artist, String album) {
         this.name = title;
         this.artist = artist;
+        this.album = album;
         this.nextTrack = null;
         this.previousTrack = null;
         this.position = 0;
@@ -42,5 +44,9 @@ class Song {
 
     public void setPosition(int position) {
         this.position = position;
+    }
+
+    public String getAlbum() {
+        return album;
     }
 }

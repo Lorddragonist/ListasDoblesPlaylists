@@ -2,9 +2,11 @@ public class Main {
     public static void main(String[] args) {
         Playlist metallica80s = new Playlist();
 
-        metallica80s.addSong("Master of Puppets", "Metallica");
-        metallica80s.addSong("Welcome Home (Sanitarium)", "Metallica");
-        metallica80s.addSong("One", "Metallica");
+        metallica80s.addSong("Master of Puppets", "Metallica" , "Master of Puppets");
+        metallica80s.addSong("Welcome Home (Sanitarium)", "Metallica", "Master of Puppets");
+        metallica80s.addSong("One", "Metallica", "And Justice For All");
+        metallica80s.addSong("Fade to Black", "Metallica", "Ride the Lightning");
+
 
         System.out.println("The playlist: Metallica80s has been created, these are the songs that you have added:" );
         metallica80s.seeEachSong();
