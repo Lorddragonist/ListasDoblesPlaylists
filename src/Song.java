@@ -22,6 +22,7 @@ public class Song {
     public String getArtist() {
         return artist;
     }
+
     public Song getNextTrack() {
         return nextTrack;
     }

@@ -90,6 +90,23 @@ public class Playlist {
         System.out.println("The song in the position '" + position + "' hasn't been found in this Playlist.");
     }
 
+    public void searchSong(String name) {
+        Song current = first;
+
+        while (current != null) {
+            if (current.getName().equals(name)) {
+                System.out.println("We have found this Title: " + current.getName() +
+                        ", artist: " + current.getArtist() +
+                        ", album: " + current.getAlbum() +
+                        ", position: " + current.getPosition());
+                return; // The song was deleted
+            }
+            current = current.getNextTrack();
+        }
+
+        System.out.println("The song in the name '" + name + "' hasn't been found in this Playlist.");
+    }
+
     public void searchSongByPosition(int position) {
         Song current = first;
 
@@ -128,7 +145,7 @@ public class Playlist {
         }
     }
 
-    public void concatenatePlaylist(Playlist playlist2){
+    public void concatenatePlaylist(Playlist playlist2) {
         last.setNextTrack(playlist2.getFirst());
         playlist2.getFirst().setPreviousTrack(last);
         last = playlist2.getLast();
@@ -140,7 +157,7 @@ public class Playlist {
             current = current.getNextTrack();
             newPosition++;
         }
-        len = newPosition-1;
+        len = newPosition - 1;
     }
 
     public Song getFirst() {
@@ -149,6 +166,38 @@ public class Playlist {
 
     public Song getLast() {
         return last;
+    }
+
+    public void replaceSong(int idSong, String name, String artist, String album){
+        Song newSong = new Song(name, artist, album);
+        Song current = first;
+        while (current != null) {
+            if (current.getPosition() == idSong) {
+                newSong.setPreviousTrack(current.getPreviousTrack());
+                newSong.setNextTrack(current.getNextTrack());
+                if (current.getPreviousTrack() != null) {
+                    current.getPreviousTrack().setNextTrack(newSong);
+                } else {
+                    first = newSong;
+                }
+
+                if (current.getNextTrack() != null) {
+                    current.getNextTrack().setPreviousTrack(newSong);
+                } else {
+                    last = newSong;
+                }
+
+                current = first;
+                int newPosition = 1;
+                while (current != null) {
+                    current.setPosition(newPosition);
+                    current = current.getNextTrack();
+                    newPosition++;
+                }
+                return; // The song was replaced
+            }
+            current = current.getNextTrack();
+        }
     }
 
 }
