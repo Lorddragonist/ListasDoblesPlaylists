@@ -127,4 +127,28 @@ public class Playlist {
             System.out.println("There are " + len + " songs.");
         }
     }
+
+    public void concatenatePlaylist(Playlist playlist2){
+        last.setNextTrack(playlist2.getFirst());
+        playlist2.getFirst().setPreviousTrack(last);
+        last = playlist2.getLast();
+
+        Song current = first;
+        int newPosition = 1;
+        while (current != null) {
+            current.setPosition(newPosition);
+            current = current.getNextTrack();
+            newPosition++;
+        }
+        len = newPosition-1;
+    }
+
+    public Song getFirst() {
+        return first;
+    }
+
+    public Song getLast() {
+        return last;
+    }
+
 }
